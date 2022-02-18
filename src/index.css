@@ -1,0 +1,20 @@
+body {
+  background-color: darkblue;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+#app-root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.big-time {
+  font-size: 100px;
+  font-weight: bold;
+}
