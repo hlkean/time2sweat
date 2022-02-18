@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {AtomParagraph, AtomHeadingH1, AtomButton} from '../atoms';
+import {AtomParagraph, AtomHeadingH1, AtomButton} from 'atoms';
 interface Exercise {
     name: string;
     difficulty: number;

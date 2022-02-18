@@ -7,12 +7,9 @@ import 'core-js/features/promise'
 import 'core-js/features/set'
 import 'raf/polyfill'
 import 'whatwg-fetch'
-import { OrganismSetTimer } from './organisms';
-import {createWorkout, generateSets} from './utils/exercise'
+import { PageLogin } from 'pages';
 
-const list = createWorkout(8);
-const sets = generateSets(list);
 ReactDOM.render(
-    <OrganismSetTimer sets={sets}/>,
+    <PageLogin />,
     document.getElementById('app-root'),
 )

@@ -2,6 +2,8 @@ const prod = process.env.NODE_ENV === 'production';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
+const path = require('path');
 
 module.exports = {
   mode: prod ? 'production' : 'development',
@@ -31,5 +33,15 @@ module.exports = {
       template: 'index.html',
     }),
     new MiniCssExtractPlugin(),
+    new Dotenv(),
   ],
+  resolve: {
+    alias: {
+      pages: path.resolve(__dirname, 'src/pages/'),
+      atoms: path.resolve(__dirname, 'src/atoms/'),
+      molecules: path.resolve(__dirname, 'src/molecules/'),
+      organisms: path.resolve(__dirname, 'src/organisms/'),
+      utils: path.resolve(__dirname, 'src/utils/'),
+    }
+  }
 };

@@ -11,6 +11,24 @@
         "strict": true,
         "sourceMap": true,
         "target": "esnext",
+        "baseUrl": "./",
+        "paths": {
+            "pages": [
+                "src/pages/"
+            ],
+            "atoms": [
+                "src/atoms/"
+            ],
+            "molecules": [
+                "src/molecules/"
+            ],
+            "organisms": [
+                "src/organisms/"
+            ],
+            "utils/*": [
+                "src/utils/*"
+            ]
+        }
     },
     "exclude": [
         "node_modules"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { AtomParagraph } from '../atoms';
-import { MoleculeTimer } from '../molecules';
+import { AtomParagraph } from 'atoms';
+import { MoleculeTimer } from 'molecules';
 
 interface Set {
     duration: number;
